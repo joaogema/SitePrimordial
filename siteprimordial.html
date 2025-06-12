@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primordial Ventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alegreya Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+    .hero {
+        position: relative;
+        background-image: url('image1.jpg'); /* Background image */
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(40, 63, 99, 0.8); /* Blue overlay with opacity */
+        z-index: 1;
+        }
+        .hero img {
+            width: 800px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .hero .slogan {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .hero .contact-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .hero img, .hero .slogan, .hero .contact-info {
+        position: relative; /* Ensure elements are positioned relative to the parent */
+        z-index: 2; /* Bring elements to the front */
+    }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="logopv2.png" alt="Primordial Ventures Logo">
+        <div class="slogan">Curating Premium Projects Since 2005</div>
+        <div class="contact-info">
+            <p>geral@primordial.ventures</p>
+        </div>
+    </div>
+</body>
+</html>
