@@ -40,33 +40,40 @@
       z-index: 1;
     }
 
-    .hero img {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: 15px;
+    .text-container {
       position: relative;
       z-index: 2;
-    
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 700px;
     }
 
-    .hero .coming-soon {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white; 
-    position: relative;
-    z-index: 2;
+    .text-container img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
     }
 
-    .hero .slogan {
+    .coming-soon {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .slogan {
       font-size: 1.5em;
       font-weight: 700;
       margin-top: 10px;
+      color: white;
     }
 
-    .hero .contact-info {
+    .contact-info {
       font-size: 1.2em;
       margin-top: 10px;
+      color: white;
     }
 
     /* RESPONSIVE STYLES */
@@ -77,50 +84,44 @@
         min-height: 100vh;
       }
 
-      .hero .coming-soon {
+      .text-container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .coming-soon {
         font-size: 1.5em;
       }
 
-      .hero .slogan {
+      .slogan {
         font-size: 1.2em;
       }
 
-      .hero .contact-info {
+      .contact-info {
         font-size: 1em;
-      }
-
-      .hero img {
-        max-width: 70%;
       }
     }
 
     @media (max-width: 480px) {
-      .hero .coming-soon {
+      .coming-soon {
         font-size: 1.2em;
       }
 
-      .hero .slogan {
+      .slogan {
         font-size: 1em;
       }
 
-      .hero .contact-info {
+      .contact-info {
         font-size: 0.9em;
-      }
-
-      .hero img {
-        max-width: 90%;
       }
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <img src="logopv2.png" alt="Primordial Ventures Logo" />
-    <div class="coming-soon">Full Website Coming Soon</div>
-    <div class="slogan">Curating Premium Projects Since 2005</div>
-    <div class="contact-info">
-      <p>geral@primordial.ventures</p>
-    </div>
-  </div>
-</body>
-</html>
+    <div class="text-container">
+      <img src="logopv2.png" alt="Primordial Ventures Logo" />
+      <div class="coming-soon">Full Website Coming Soon</div>
+      <div class="slogan">Curating Premium Projects Since 2005</div>
+      <div class="contact-info">
+        <p>geral@primordial.ventu
